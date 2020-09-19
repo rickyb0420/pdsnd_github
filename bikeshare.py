@@ -1,5 +1,5 @@
 
-# Pandas Doc sited, OkaySidd Repository to help structure, Xhlow repository to help structre 
+# Pandas Doc sited, OkaySidd Repository to help structure, Xhlow repository to help structre
 import time
 import pandas as pd
 import numpy as np
@@ -17,7 +17,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hi There! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
 
@@ -27,19 +27,19 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
 
     while True:
-          city = input("Which city would you like to filter by? New York city, Chicago or Washington?\n")
-          city=city.lower() # conv to lower case 
-          
+          city = input("Tell me what city would you like to filter by? New York city, Chicago or Washington?\n")
+          city=city.lower() # conv to lower case
+
           if city not in ("new york city", "chicago", "washington"):
             print("Sorry, That is not a valid city, please try again")
             continue
           else:
             break
-        
+
     while True:
           month = input("Which month would you like to filter by? January, February, March, April, May, June or type 'all' if you do not have any preference?\n")
-          month = month.lower() 
-          #print("This is the monthhhh ====   "+ month)  
+          month = month.lower()
+          #print("This is the monthhhh ====   "+ month)
           if month not in ("january", "february", "march", "april", "may", "june", "all"):
             print("Sorry, that was not a valid month. Please try again.")
             continue
